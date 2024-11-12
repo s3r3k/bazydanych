@@ -36,7 +36,7 @@ I w koncu primary key
 ```
 ALTER TABLE postac DROP PRIMARY KEY
 ```
-## Zadanie 22
+## Zadanie 2
 ### a
 ```
 ALTER TABLE postac
