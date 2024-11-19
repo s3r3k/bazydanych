@@ -47,7 +47,7 @@ SELECT idZasobu, ilosc FROM ekwipunek WHERE idKreatury = 1 OR idKreatury = 2 OR 
 
 ### 2.1
 ```
-SELECT * FROM kreatura WHERE rodzaj != 'wiedźma' AND ciezar >= 50;
+SELECT * FROM kreatura WHERE rodzaj != 'wiedźma' AND udzwig >= 50;
 ```
 
 ### 2.2
@@ -57,7 +57,7 @@ SELECT * FROM zasob WHERE waga BETWEEN 2 AND 5;
 
 ### 3.3
 ```
-SELECT * FROM kreatura WHERE nazwa LIKE '%or%' AND ciezar BETWEEN 30 AND 70;
+SELECT * FROM kreatura WHERE nazwa LIKE '%or%' AND udzwig BETWEEN 30 AND 70;
 ```
 
 
