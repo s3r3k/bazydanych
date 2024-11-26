@@ -68,6 +68,3 @@ SELECT k1.nazwa AS kreatura1, k2.nazwa AS kreatura2
 FROM kreatura k1
 JOIN kreatura k2 ON ABS(k1.idKreatury - k2.idKreatury) = 5;
 ```
-
---5
-```
