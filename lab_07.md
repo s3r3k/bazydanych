@@ -1,5 +1,5 @@
 > [!WARNING]
-> DOKOŃCZYĆ. NIE SPRAWDZAŁEM
+> DOKOŃCZYĆ NIE SPRAWDZAŁEM
 
 ## Zadanie 1.1
 
