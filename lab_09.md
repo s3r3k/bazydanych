@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> W trakcie. Na zajęciach zabrakło sił i chęci.
+
 ## Zadanie 1.1
 ### 1.1.1
 ```
