@@ -1,6 +1,11 @@
-
 > [!IMPORTANT]
 > W trakcie.
+```
+    /// //_.-'    .-/";  `        ``<._  ``.''_ `. / // /  W każdy wtorek około 15:10
+   ///_.-' _..--.'_    \                    `( ) ) // //   ekscytuje mnie myśl,
+   / (_..-' // (< _     ;_..__               ; `' / ///    o dokończeniu tych zadań
+    / // // //  `-._,_)' // / ``--...____..-' /// / //     w domu.
+```
 ### 1.
 ``` MySQL
 SELECT imie, nazwisko, YEAR(data_urodzenia) AS rok_urodzenia FROM pracownik;
