@@ -6,6 +6,7 @@
    / (_..-' // (< _     ;_..__               ; `' / ///    o dokończeniu tych zadań
     / // // //  `-._,_)' // / ``--...____..-' /// / //     w domu.
 ```
+
 ### 1.
 ``` MySQL
 SELECT imie, nazwisko, YEAR(data_urodzenia) AS rok_urodzenia FROM pracownik;
