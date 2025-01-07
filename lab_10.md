@@ -82,59 +82,6 @@ WHERE z.data_zamowienia BETWEEN '2017-01-01' AND '2017-03-31'
 GROUP BY z.id_zamowienia;
 ```
 
-### 10.
-``` MySQL
-SELECT p.imie, p.nazwisko, SUM(z.wartosc) AS suma_zamowien
-FROM pracownik p
-JOIN zamowienie z ON p.id_pracownika = z.pracownik
-GROUP BY p.id_pracownika
-ORDER BY suma_zamowien DESC;
-```
-
-### 11.
-``` MySQL
-SELECT d.nazwa AS dzial, 
-       MIN(p.pensja) AS minimalna_pensja,
-       MAX(p.pensja) AS maksymalna_pensja,
-       ROUND(AVG(p.pensja), 2) AS srednia_pensja
-FROM dzial d
-LEFT JOIN pracownik p ON d.id_dzialu = p.dzial
-GROUP BY d.id_dzialu;
-```
-
-### 12.
-``` MySQL
-SELECT k.pelna_nazwa, SUM(zp.ilosc * zp.cena_jednostkowa) AS wartosc_zamowienia
-FROM klient k
-JOIN zamowienie z ON k.id_klienta = z.klient
-JOIN zamowienie_pozycja zp ON z.id_zamowienia = zp.id_zamowienia
-GROUP BY z.id_zamowienia
-ORDER BY wartosc_zamowienia DESC
-LIMIT 10;
-```
-
-### 13.
-``` MySQL
-SELECT YEAR(z.data_zamowienia) AS rok, SUM(zp.ilosc * zp.cena_jednostkowa) AS przychod
-FROM zamowienie z
-JOIN zamowienie_pozycja zp ON z.id_zamowienia = zp.id_zamowienia
-GROUP BY YEAR(z.data_zamowienia)
-ORDER BY przychod DESC;
-```
-
-### 14.
-``` MySQL
-SELECT SUM(zp.ilosc * zp.cena_jednostkowa) AS suma_anulowanych
-FROM zamowienie z
-JOIN zamowienie_pozycja zp ON z.id_zamowienia = zp.id_zamowienia
-WHERE z.status = 'anulowane';
-```
-
-### 15.
-``` MySQL
-SELECT k.miasto, COUNT(z.id_zamowienia) AS liczba_zamowien, 
-       SUM(zp.ilosc * zp.cena_jednostkowa) AS suma_zamowien
-FROM klient k
 JOIN zamowienie z ON k.id_klienta = z.klient
 JOIN zamowienie_pozycja zp ON z.id_zamowienia = zp.id_zamowienia
 GROUP BY k.miasto;
