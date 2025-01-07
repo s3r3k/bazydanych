@@ -87,7 +87,7 @@ JOIN zamowienie_pozycja zp ON z.id_zamowienia = zp.id_zamowienia
 WHERE z.data_zamowienia BETWEEN '2017-01-01' AND '2017-03-31'
 GROUP BY z.id_zamowienia;
 ```
-
+``` MySQL
 JOIN zamowienie z ON k.id_klienta = z.klient
 JOIN zamowienie_pozycja zp ON z.id_zamowienia = zp.id_zamowienia
 GROUP BY k.miasto;
